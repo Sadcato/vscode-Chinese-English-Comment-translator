@@ -1,4 +1,5 @@
 # 中英文注释翻译器
+// Chinese and English annotation translator
 
 ## 概述
 “中英文注释翻译器”是一个Visual Studio Code扩展，它提供实时的中英双向注释翻译功能，能够帮助开发者在多语言环境下提高代码的可读性和理解性。该扩展支持使用`Ctrl+Y`将中文注释翻译为英文，并支持使用`Alt+Y`将英文注释通过悬浮提示翻译为中文。
