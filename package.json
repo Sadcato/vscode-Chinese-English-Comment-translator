@@ -1,0 +1,70 @@
+{
+  "name": "vscode-translator-v2",
+  "displayName": "Chinese & English Comment中英文注释翻译器",
+  "description": "Translate comments between Chinese and English. Use Ctrl+Y for Chinese to English and Alt+Y for English to Chinese.",
+  "version": "0.0.6",
+  "publisher": "sadcato",
+  "icon": "images/logo.png",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Sadcato/vscode-translator.git"
+  },
+  "engines": {
+    "vscode": "^1.55.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:extension.translateToEnglish",
+    "onCommand:extension.translateToChinese"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "extension.translateToEnglish",
+        "title": "Translate Chinese to English"
+      },
+      {
+        "command": "extension.translateToChinese",
+        "title": "Translate English to Chinese"
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "extension.translateToEnglish",
+        "key": "ctrl+y",
+        "mac": "cmd+y",
+        "when": "editorTextFocus"
+      },
+      {
+        "command": "extension.translateToChinese",
+        "key": "alt+y",
+        "mac": "alt+y",
+        "when": "editorTextFocus"
+      }
+    ],
+    "hoverProviders": [
+      {
+        "language": "*"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "tsc -p ./",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.9",
+    "@types/uuid": "^10.0.0",
+    "typescript": "^4.2.3",
+    "vscode": "^1.1.37"
+  },
+  "dependencies": {
+    "axios": "^1.7.2",
+    "crypto": "^1.0.1",
+    "uuid": "^10.0.0"
+  }
+}
