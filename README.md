@@ -1,6 +1,6 @@
 # 中英文注释翻译器
 
-![Here.png](images/Here.png)
+![here.png](images/here.png)
 
 ## 概述
 
