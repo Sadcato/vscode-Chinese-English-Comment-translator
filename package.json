@@ -41,7 +41,7 @@
       {
         "command": "extension.translateToChinese",
         "key": "alt+y",
-        "mac": "alt+y",
+        "mac": "cmd+u",
         "when": "editorTextFocus"
       }
     ],
